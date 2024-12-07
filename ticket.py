@@ -22,3 +22,26 @@ t=train(12599)
 t.book("Nagpur","Hyderabad")
 t.get_status()
 t.Fair("Nagpur","Hyderabad")
+
+# --------------------------------------------------------------------------------------------------------------------------------
+
+# Calculator
+
+class number:
+
+    def __init__(self,x):
+        self.x=x
+    def square(self):
+        print(f"The square of {self.x} is {self.x*self.x}")
+    def cube(self):
+        print(f"The cube of {self.x} is {self.x*self.x*self.x}")
+    def square_root(self):
+        print(f"The square_root of {self.x} is {self.x**(1/2):.2f}")
+    def cube_root(self):
+        print(f"The square of {self.x} is {self.x**(1/3):.2f}")
+
+a=number(64)
+a.square()
+a.cube()
+a.square_root()
+a.cube_root()
