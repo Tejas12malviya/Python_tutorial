@@ -44,3 +44,4 @@ class Account_new:
         
 acc1=Account_new(123456,'abcd')
 print(acc1.Account_no,acc1.__Password)   # shows error while calling aac1.__Password
+# Similary methods can also br made private by writting '__' infront of it example " def __item() "
