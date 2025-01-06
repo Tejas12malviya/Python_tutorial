@@ -10,7 +10,7 @@ print(s1.name)
 # It is a special function which is invoke while object creation.
 
 class Stud:
-    #  default constructor
+    #  default/empty constructor, if we didn't give it is automatically called.
     def __init__(self):
         pass
 
