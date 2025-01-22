@@ -17,7 +17,7 @@ del i1.item_id,i1.name
 print(i1.item_id,i1.name)# shows error because in previous line we deleted item_id
 
 
-
+    
 # --------------------------------PRIVATE ATTRIBUTE--------------------------------
 
 
