@@ -1,1 +1,64 @@
+# -----------------------------------------------PRIME NUMBER CHECK-----------------------------------------------------
+
+def is_prime(num):
+    if num<0 or num==0:
+        print("Take positive integer greater than 1 to check weather the given number is prime or composite.")
+    else:
+        for i in range(2,num):
+            if num%i==0:
+                return True
+
+
+num=int(input("\nGive the number to check weather it is prime number or composite number :"))
+
+if is_prime(num):
+    print(f"{num} is the composite number.")
+
+else:
+    print(f"{num} is the prime number.")
+
+
+# ---------------------------------------GIVEN NUMBER COMES UNDER FOLLOWING TABLES--------------------------------------
+
+def factor(num):
+    if num==0 or num==1:
+        print("Invalid input, Enter number greater than 1 to find its factor table.")
+    else:
+        factor_table=[]
+        for i in range(1,num+1):
+            if num%i==0:
+                factor_table.append(i)
+                i+=1
+        return factor_table
+
+output=factor(num)
+print(f"\n{num} is divisible by numbers in following list :\n{output}")
+
+
+# ---------------------------------------------------FABONACCI SERIES---------------------------------------------------
+
+def fabonacci_series(num):
+    list=[0,1]
+    for i in range(1,num):
+        list.append(list[i]+list[i-1])
+        i+=1
+    return list
+
+output=fabonacci_series(num)
+print(f"\nFabonacci series for {num+1} terms are:\n{output}")
+
+
+# ----------------------------------------------------FACTORIAL---------------------------------------------------------
+
+def factorial(num):
+    val=1
+    for i in range (1,num+1):
+        val*=i
+        # i+=1
+    return val
+
+
+print(factorial(num))
+
+
 
